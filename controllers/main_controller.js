@@ -89,7 +89,7 @@ $scope.products = [
       "price": 17900,
       "inStock": true,
       "rating": 3,
-      "imageUrl": "http://content.backcountry.com/images/items/900/GRE/GRE002A/SPARD.jpg?$cimg$",
+      "imageUrl": "http://content.backcountry.com/images/items/900/KEL/KEL004P/GARRD.jpg?$cimg$",
       "__v": 0,
       "categories": [ "hydration compatible", "summer"]
   },
@@ -113,7 +113,7 @@ $scope.products = [
       "price": 29900,
       "inStock": true,
       "rating": 3,
-      "imageUrl": "http://content.backcountry.com/images/items/900/GRE/GRE002A/SPARD.jpg?$cimg$",
+      "imageUrl": "http://content.backcountry.com/images/items/900/MHW/MHW004K/SK.jpg?$cimg$",
       "__v": 0,
       "categories": [ "lumbar support", "summer", "hydration compatible"]
   },
