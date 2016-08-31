@@ -5,6 +5,11 @@
   height: 25%;
   width:100%;
 }
+
+.image-size-2{
+  height: 25%;
+  width:20vw;
+}
 .cell-size-right{
   width: 20%;
 }
