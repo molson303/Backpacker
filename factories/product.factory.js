@@ -32,7 +32,3 @@ app.factory('teaService', function () {
     },
   }
 })
-
-// TO DO
-// remove updates total but does not remove items
-// submit updates subtotal but not total

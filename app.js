@@ -9,5 +9,11 @@ app.config (function($routeProvider) {
       templateUrl: 'templates/checkout.html',
       controller: 'CheckoutController'
     })
+    .when('/about', {
+      templateUrl: 'templates/about.html',
+    })
+    .when('/contact',{
+      templateUrl: 'templates/contact.html'
+    })
     .otherwise('/');
 })
