@@ -2,7 +2,7 @@ app.controller('MainController', function ($scope, teaService) {
 $scope.vw = {}
  $scope.quantity = function(product, quantity){
    teaService.add(product, quantity)
-   $scope.vw.cartQuantity= teaService.inventory.length;
+   $scope.vw.cartQuantity = teaService.inventory.length;
 
  }
 $scope.amount = 1;

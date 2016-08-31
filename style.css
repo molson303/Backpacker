@@ -1,3 +1,12 @@
+.nav-colors{
+  color: black;
+}
+.nav-style{
+  background-color: white;
+}
+.button-margin{
+  margin-bottom: 1%;
+}
 .cell-size-left{
   width: 5%;
 }
@@ -22,7 +31,7 @@
   background-color: #F5B965;
 }
 .header-title{
-  color: #FB7E5C;
+  color: black;
   font-style: italic;
   font-size: 3em;
 }
