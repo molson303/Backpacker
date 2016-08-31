@@ -1,0 +1,47 @@
+.cell-size-left{
+  width: 5%;
+}
+.image-size{
+  height: 25%;
+  width:100%;
+}
+.cell-size-right{
+  width: 20%;
+}
+
+.product-margin{
+  margin-left: 5%;
+}
+
+.button-color{
+  background-color: #F5B965;
+}
+.header-title{
+  color: #FB7E5C;
+  font-style: italic;
+  font-size: 3em;
+}
+.background-color{
+  background-color: #F7F7F7;
+}
+
+.margin-main-page{
+  margin-top: -3vh;
+}
+.checkout-button{
+  background-color: #D75452;
+  color: black;
+}
+
+.col-background{
+  background-color: #fff;
+}
+
+.checkout-col-width{
+  width: 20%;
+}
+
+.checkout-col-width-product{
+  width: 40%;
+
+}
