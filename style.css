@@ -57,5 +57,7 @@
 
 .checkout-col-width-product{
   width: 40%;
-
+}
+.spacer{
+  height: 30vh;
 }

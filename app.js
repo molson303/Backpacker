@@ -12,8 +12,5 @@ app.config (function($routeProvider) {
     .when('/about', {
       templateUrl: 'templates/about.html',
     })
-    .when('/contact',{
-      templateUrl: 'templates/contact.html'
-    })
     .otherwise('/');
 })
