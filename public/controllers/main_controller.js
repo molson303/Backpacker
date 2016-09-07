@@ -16,7 +16,7 @@ $scope.products = [
       "price": 29800,
       "inStock": true,
       "rating": 1,
-      "imageUrl": "http://content.backcountry.com/images/items/900/GRE/GRE002A/SPARD.jpg?$cimg$",
+      "imageUrl": "images/balt.jpg",
       "__v": 0,
       "categories": [ "lightweight", "adjustable"]
   },
@@ -29,7 +29,7 @@ $scope.products = [
       "price": 47500,
       "inStock": true,
       "rating": 1,
-      "imageUrl": "http://content.backcountry.com/images/items/900/ARC/ARC3537/DIARD.jpg?$cimg$",
+      "imageUrl": "images/arc.jpg",
       "__v": 0,
       "categories": [ "awesome", "responsive"]
   },
@@ -41,7 +41,7 @@ $scope.products = [
       "price": 25900,
       "inStock": true,
       "rating": 1,
-      "imageUrl": "http://content.backcountry.com/images/items/900/OSP/OSP0322/BONGN.jpg?$cimg$",
+      "imageUrl": "images/osp.jpg",
       "__v": 0,
       "categories": [ "responsive", "lumbar support"]
   },
@@ -53,7 +53,7 @@ $scope.products = [
       "price": 30900,
       "inStock": true,
       "rating": 1,
-      "imageUrl": "http://content.backcountry.com/images/items/900/HAG/HAG006A/DEEBL.jpg?$cimg$",
+      "imageUrl": "images/hag.jpg",
       "__v": 0,
       "categories": [ "winter", "hydration compatible"]
   },
@@ -65,7 +65,7 @@ $scope.products = [
       "price": 17800,
       "inStock": true,
       "rating": 1,
-      "imageUrl": "http://content.backcountry.com/images/items/900/TNF/TNF00D1/ESTBLUGRE.jpg?$cimg$",
+      "imageUrl": "images/northface.jpg",
       "__v": 0,
       "categories": [ "detachable daypack", "adjustable", "compression straps"]
   },
@@ -77,7 +77,7 @@ $scope.products = [
       "price": 20900,
       "inStock": true,
       "rating": 1,
-      "imageUrl": "http://content.backcountry.com/images/items/900/DTR/DTR001N/GRA.jpg?$cimg$",
+      "imageUrl": "images/deuter.jpg",
       "__v": 0,
       "categories": [ "lightweight", "summer"]
   },
@@ -89,7 +89,7 @@ $scope.products = [
       "price": 17900,
       "inStock": true,
       "rating": 3,
-      "imageUrl": "http://content.backcountry.com/images/items/900/KEL/KEL004P/GARRD.jpg?$cimg$",
+      "imageUrl": "images/kelty.jpg",
       "__v": 0,
       "categories": [ "hydration compatible", "summer"]
   },
@@ -101,7 +101,7 @@ $scope.products = [
       "price": 17900,
       "inStock": true,
       "rating": 2,
-      "imageUrl": "http://content.backcountry.com/images/items/900/MAM/MAM00CL/POP_D2.jpg?$cimg$",
+      "imageUrl": "images/mam.jpg",
       "__v": 0,
       "categories": [ "compression straps", "awesome"]
   },
@@ -113,7 +113,7 @@ $scope.products = [
       "price": 29900,
       "inStock": true,
       "rating": 3,
-      "imageUrl": "http://content.backcountry.com/images/items/900/MHW/MHW004K/SK.jpg?$cimg$",
+      "imageUrl": "images/mh.jpg",
       "__v": 0,
       "categories": [ "lumbar support", "summer", "hydration compatible"]
   },
@@ -125,7 +125,7 @@ $scope.products = [
       "price": 24900,
       "inStock": true,
       "rating": 1,
-      "imageUrl": "http://content.backcountry.com/images/items/900/MOU/MOU002L/ANVGRE.jpg?$cimg$",
+      "imageUrl": "images/ms.jpg",
       "__v": 0,
       "categories": [ "detachable daypack", "summer"]
   }
