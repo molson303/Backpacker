@@ -1,3 +1,7 @@
+
+<div id="background_Picture">
+
+
 <div class="container">
   <div class="row">
     <div class="col-md-12 text-center">
@@ -5,6 +9,7 @@
     </div>
   </div>
 </div>
+
 <div class="container">
 <div class="row">
   <div class="col-md-12 text-right button-margin">
@@ -13,15 +18,16 @@
   </div>
 </div>
 </div>
+
 <div class="container">
-<div class="row">
-  <div class="col-md-12">
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th class="col-background"><h4>Backpacks</h4></th>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th class="col-background"><h4>Backpacks</h4></th>
           <div>
-          <th class="row col-background">
+            <th class="row col-background">
             <div class="col-md-6">
               <h5>Backpack Information</h5>
             </div>
@@ -34,21 +40,21 @@
                 <option value="-price">High</option>
               </select>
             </div>
-          </th>
-        </div>
-        </tr>
-      </thead>
-    <div>
-      <tbody class="table">
-      <tr ng-repeat = "product in products | filter:searchText | orderBy:taco">
-        <td class="cell-size-left"><img class="image-size" src="{{product.imageUrl}}" alt=""/></td>
-        <td class="cell-size-right">
+            </th>
+          </div>
+          </tr>
+        </thead>
+      <div>
+        <tbody class="table">
+          <tr ng-repeat = "product in products | filter:searchText | orderBy:taco">
+            <td class="cell-size-left"><img class="image-size" src="{{product.imageUrl}}" alt=""/></td>
+            <td class="cell-size-right">
           <div class="row">
-              <div class="col-md-4">
-                <h2>{{product.name}}</h2>
-              </div>
+            <div class="col-md-4">
+              <h2>{{product.name}}</h2>
+            </div>
               <div class="col-md-8">
-                  <h5 class="text-right">Quantity:
+                <h5 class="text-right">Quantity:
                   <select ng-model="amount">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -63,30 +69,24 @@
                   </select>
                   <button class="btn button-color" ng-click="quantity(product, amount)" type="submit" name="button">Add to Bag</button>
                 </h5>
-                </form>
               </div>
             </div>
           </div>
-          <div class="product-margin">
-            <span>
-          <h5 ng-model="taco">Price: {{product.price/100 | currency}}</h5></span>
-          <h5>Specifications: {{product.specifications}}</h5>
-          <h5>Weight: {{product.weight}}</h5>
-          <h5>Rating: {{product.rating}}</h5>
-          <h5>In Stock: {{product.inStock}}</h5>
-          <h5>Categories: <ul ng-repeat = "cat in product.categories">
-              <li>{{cat}}</li>
-          </ul></h5>
-        </div>
-        </td>
-      </tr><!--END OF NG-REPEAT-->
-    </tbody>
-  </table>
+              <div class="product-margin">
+                <h5 ng-model="taco">Price: {{product.price/100 | currency}}</h5>
+                <h5>Specifications: {{product.specifications}}</h5>
+                <h5>Weight: {{product.weight}}</h5>
+                <h5>Rating: {{product.rating}}</h5>
+                <h5>In Stock: {{product.inStock}}</h5>
+                <h5>Categories: <ul ng-repeat = "cat in product.categories">
+                  <li>{{cat}}</li>
+                </ul></h5>
+              </div>
+            </td>
+          </tr><!--END OF NG-REPEAT-->
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-</div>
-
-
-
 </div>
