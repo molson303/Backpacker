@@ -4,6 +4,8 @@
 .nav-style{
   background-color: black;
   font-family: 'Noto Serif', serif;
+  border: 2px solid black;
+
 }
 .button-margin{
   margin-bottom: 1%;
@@ -15,7 +17,10 @@
   height: 25%;
   width:100%;
 }
-
+.navbar-brand{
+  color: white;
+  font-family: 'Noto Serif', serif;
+}
 .image-size-2{
   height: 25%;
   width:20vw;
@@ -40,25 +45,17 @@
 
 #background_Picture{
   background: url(images/backpacker_3.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+  height: cover;
 
-}
-
-.margin-main-page{
-  margin-top: -3vh;
 }
 .checkout-button{
   background-color: #D75452;
   color: black;
 }
-
 .col-background{
   background-color: #fff;
 }
-
 
 .checkout-col-width{
   width: 20%;
@@ -70,6 +67,6 @@
 .spacer{
   height: 30vh;
 }
-h1 {
+h1 li {
     font-family: 'Noto Serif', serif;
 }

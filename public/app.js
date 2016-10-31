@@ -1,4 +1,4 @@
-var app = angular.module('meanTea', ['ngRoute']);
+var app = angular.module('backpacker', ['ngRoute']);
 app.config (function($routeProvider) {
   $routeProvider
     .when('/', {
