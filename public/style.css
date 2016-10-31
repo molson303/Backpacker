@@ -53,12 +53,14 @@
 #background_Picture {
     background: url(images/backpacker_3.jpg) no-repeat center center fixed;
     background-size: cover;
-    padding-bottom: 10%;
+    padding-bottom: 30%;
 }
 
 .checkout-button {
     background-color: #D75452;
     color: black;
+    font-family: 'Noto Serif', serif;
+
 }
 
 .col-background {
@@ -77,30 +79,52 @@
     height: 30vh;
 }
 
-h1, h2, li {
-    font-family: 'Noto Serif', serif;
-}
-
 
 /*ABOUT PAGE */
 
 .about_title {
-  color: black;
-  font-size: 4em;
+    color: black;
+    font-size: 4em;
+    font-family: 'Noto Serif', serif;
+
 }
-.about_backpacker{
-  color: black;
+
+.about_backpacker {
+    color: black;
+    font-family: 'Noto Serif', serif;
+
 }
-.block{
-  background-color: white;
-  opacity: .9;
-  border-radius: 15px 15px 15px 15px;
-  padding: 1%;
-  margin-top: 2%;
+
+.block {
+    background-color: white;
+    opacity: .9;
+    border-radius: 15px 15px 15px 15px;
+    padding: 1%;
+    margin-top: 2%;
 }
-.about_backpacker_title{
-  color: white;
+
+.about_backpacker_title {
+    color: white;
+    font-family: 'Noto Serif', serif;
+
 }
 
 
 /*end*/
+
+/*CHECKOUT PAGE */
+.checkout_text_style{
+  margin-top: 5%;
+  color:white;
+  font-family: 'Noto Serif', serif;
+}
+.price_total_text{
+  color:white;
+  font-family: 'Noto Serif', serif;
+}
+.font{
+  font-family: 'Noto Serif', serif;
+
+}
+
+/*END*/

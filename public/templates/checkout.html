@@ -1,63 +1,63 @@
 <div class="container">
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <h1 class="header-title text-left">Backpacker Checkout</h1>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-<div class="row">
-  <div class="col-md-12">
-    <div class="text-left">
-    <h3>My Shopping Bag</h3>
-    </div>
-    <div class="text-right">
-      <h3>Order Total: {{orderTotal/100 | currency}}</h3>
-    </div>
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th class="col-background"><h4>Product</h4></th>
-
-          <div>
-          <th class="row col-background">
-            <div class="col-md-4">
-              <h5>Quantity</h5>
-            </div>
-          </th>
-          <th class="row col-background">
-            <div class="col-md-4">
-              <h5>Sub-Total</h5>
-            </div>
-          </th>
-          <th class="row col-background">
-            <div class="col-md-3">
-              <h5>Update</h5>
-            </div>
-          </th>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1 class="header-title text-left">Backpacker Checkout</h1>
         </div>
-        </tr>
-      </thead>
-      <tbody class="table">
-      <tr ng-repeat = "product in inventory">
-        <td class="cell-size-left">
-          <div class="row">
-              <div class="col-md-4">
-                <h2>{{product.name}}</h2>
-              </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="text-left">
+                <h3 class="checkout_text_style">My Shopping Bag</h3>
             </div>
-          <img class="image-size-2" src="{{product.imageUrl}}" alt=""/>
-          <h5>Specifications: {{product.specifications}}</h5>
-          <h5>Weight: {{product.weight}}</h5>
-          <h5>Rating: {{product.rating}}</h5>
-        </td>
-        <td class="cell-size-right">
-          <div class="product-margin text-center">
-            <h5 ng-show="!edit">{{product.quantity}}</h5>
-          </div>
-          <div class="text-center">
-          <select ng-show="edit" ng-model="amount">
+            <div class="text-right">
+                <h3 class="price_total_text">Order Total: {{orderTotal/100 | currency}}</h3>
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="col-background">
+                            <h4 class="font">Product</h4></th>
+
+                        <div>
+                            <th class="row col-background font">
+                                <div class="col-md-4">
+                                    <h5>Quantity</h5>
+                                </div>
+                            </th>
+                            <th class="row col-background font">
+                                <div class="col-md-4">
+                                    <h5>Sub-Total</h5>
+                                </div>
+                            </th>
+                            <th class="row col-background font">
+                                <div class="col-md-3">
+                                    <h5>Update</h5>
+                                </div>
+                            </th>
+                        </div>
+                    </tr>
+                </thead>
+                <tbody class="table">
+                    <tr ng-repeat="product in inventory">
+                        <td class="cell-size-left">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h2 class="font">{{product.name}}</h2>
+                                </div>
+                            </div>
+                            <img class="image-size-2" src="{{product.imageUrl}}" alt="" />
+                            <h5 class="font">Specifications: {{product.specifications}}</h5>
+                            <h5 class="font">Weight: {{product.weight}}</h5>
+                            <h5 class="font">Rating: {{product.rating}}</h5>
+                        </td>
+                        <td class="cell-size-right">
+                            <div class="product-margin text-center">
+                                <h5 ng-show="!edit">{{product.quantity}}</h5>
+                            </div>
+                            <div class="text-center">
+                                <select ng-show="edit" ng-model="amount">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -69,27 +69,28 @@
             <option value="9">9</option>
             <option value="10">10</option>
           </select>
+                            </div>
+                        </td>
+                        <td class="cell-size-right">
+                            <div class="product-margin text-center font">
+                                {{product.quantity * product.price/100 | currency}}
+                            </div>
+                        </td>
+                        <td>
+                            <div class="col-md-4">
+                                <div ng-click="edit = !edit">
+                                    <button type="submit" class="btn btn-warning font" ng-show="!edit" name="edit">Edit</button>
+                                    <button type="submit" class="btn btn-warning font" ng-show="edit" ng-click="quantity(product, amount)" name="button">Submit</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-left">
+                                <button type="submit" class="btn btn-danger font" ng-click="deleteItem(product)" name="remove">Remove</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <!--END OF NG-REPEAT-->
+                </tbody>
+            </table>
         </div>
-        </td>
-        <td class="cell-size-right">
-          <div class="product-margin text-center">
-            {{product.quantity * product.price/100 | currency}}
-          </div>
-        </td>
-        <td>
-            <div class="col-md-4">
-            <div ng-click="edit = !edit">
-              <button type="submit" class="btn btn-warning" ng-show="!edit"  name="edit">Edit</button>
-              <button type="submit" class="btn btn-warning" ng-show="edit"  ng-click="quantity(product, amount)" name="button">Submit</button>
-          </div>
-            </div>
-          <div class="col-md-4 text-left">
-            <button type="submit" class="btn btn-danger" ng-click="deleteItem(product)" name="remove">Remove</button>
-          </div>
-        </td>
-      </tr><!--END OF NG-REPEAT-->
-    </tbody>
-  </table>
-</div>
-</div>
+    </div>
 </div>

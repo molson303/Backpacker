@@ -21,19 +21,19 @@
                 <thead>
                     <tr>
                         <th class="col-background">
-                            <h4>Backpacks</h4></th>
+                            <h4 class="font">Backpacks</h4></th>
                         <div>
                             <th class="row col-background">
                                 <div class="col-md-6">
-                                    <h5>Backpack Information</h5>
+                                    <h5 class="font">Backpack Information</h5>
                                 </div>
                                 <div class="col-md-4 text-right">
-                                    <h5>Sort by price:</h5>
+                                    <h5 class="font">Sort by price:</h5>
                                 </div>
                                 <div class="col-md-2">
                                     <select ng-model="taco">
-                <option value="price">Low</option>
-                <option value="-price">High</option>
+                <option class="font" value="price">Low</option>
+                <option class="font" value="-price">High</option>
               </select>
                                 </div>
                             </th>
@@ -47,10 +47,10 @@
                             <td class="cell-size-right">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <h2>{{product.name}}</h2>
+                                        <h2 class="font">{{product.name}}</h2>
                                     </div>
                                     <div class="col-md-8">
-                                        <h5 class="text-right">Quantity:
+                                        <h5 class="text-right font">Quantity:
                   <select ng-model="amount">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -69,13 +69,13 @@
                                 </div>
                 </div>
                 <div class="product-margin">
-                    <h5 ng-model="taco">Price: {{product.price/100 | currency}}</h5>
-                    <h5>Specifications: {{product.specifications}}</h5>
-                    <h5>Weight: {{product.weight}}</h5>
-                    <h5>Rating: {{product.rating}}</h5>
-                    <h5>In Stock: {{product.inStock}}</h5>
-                    <h5>Categories: <ul ng-repeat = "cat in product.categories">
-                  <li>{{cat}}</li>
+                    <h5 ng-model="taco" class="font">Price: {{product.price/100 | currency}}</h5>
+                    <h5 class="font">Specifications: {{product.specifications}}</h5>
+                    <h5 class="font">Weight: {{product.weight}}</h5>
+                    <h5 class="font">Rating: {{product.rating}}</h5>
+                    <h5 class="font">In Stock: {{product.inStock}}</h5>
+                    <h5 class="font">Categories: <ul class="font"ng-repeat = "cat in product.categories">
+                  <li class="font">{{cat}}</li>
                 </ul></h5>
                 </div>
                 </td>
