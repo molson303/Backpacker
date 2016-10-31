@@ -1,63 +1,76 @@
 <!DOCTYPE html>
 <html ng-app="backpacker">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Backpacker</title>
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  </head>
+</head>
 <div id="background_Picture">
-  <nav class="navbar ">
-    <div class="container-fluid nav-style">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <nav class="navbar ">
+        <div class="container-fluid nav-style">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#/">Backpacker</a>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#/">Home</a></li>
-          <li><a href="#/about">About</a></li>
-          <li class="dropdown">
-            <a href="#/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category<span class="caret"></span></a>
-            <ul ng-model="searchText" class="dropdown-menu">
-              <li ng-click="searchText=''"><a href="#/">None</a></li>
-              <li ng-click="searchText='lightweight'"><a href="#/">Lightwieght</a></li>
-              <li ng-click="searchText='adjustable'"><a href="#/">Adjustable</a></li>
-              <li ng-click="searchText='awesome'"><a href="#/">Awesome</a></li>
-              <li ng-click="searchText='responsive'"><a href="#/">Responsive</a></li>
-              <li ng-click="searchText='lumbar'"><a href="#/">Lumbar Support</a></li>
-              <li ng-click="searchText='summer'"><a href="#/">Summer</a></li>
-              <li ng-click="searchText='winter'"><a href="#/">Winter</a></li>
-              <li ng-click="searchText='hydration'"><a href="#/">Hydration Compatible</a></li>
-              <li ng-click="searchText='compression'"><a href="#/">Compression Straps</a></li>
-              <li ng-click="searchText='daypack'"><a href="#/">Detachable Daypack</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="navbar-form navbar-left">
-          <div class="form-group">
-            <input type="text" class="form-control" ng-model="searchText.name" placeholder="Search by name">
-          </div>
-        </form>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-<body>
-  <div class="margin-main-page" ng-view></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
-    <script src="factories/product.factory.js"></script>
-    <script src="controllers/main_controller.js" ></script>
-    <script src="controllers/checkout_controller.js"></script>
-  </body>
+                <a class="navbar-brand" href="#/">Backpacker</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#/">Home</a></li>
+                    <li><a href="#/about">About</a></li>
+                    <li class="dropdown">
+                        <a href="#/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category<span class="caret"></span></a>
+                        <ul ng-model="searchText" class="dropdown-menu">
+                            <li ng-click="searchText=''"><a href="#/">None</a></li>
+                            <li ng-click="searchText='lightweight'"><a href="#/">Lightwieght</a></li>
+
+                            <li ng-click="searchText='adjustable'"><a href="#/">Adjustable</a></li>
+
+                            <li ng-click="searchText='awesome'"><a href="#/">Awesome</a></li>
+                            <li ng-click="searchText='responsive'"><a href="#/">Responsive</a></li>
+
+                            <li ng-click="searchText='lumbar'"><a href="#/">Lumbar Support</a></li>
+
+                            <li ng-click="searchText='summer'"><a href="#/">Summer</a></li>
+
+                            <li ng-click="searchText='winter'"><a href="#/">Winter</a></li>
+
+                            <li ng-click="searchText='hydration'"><a href="#/">Hydration Compatible</a></li>
+
+                            <li ng-click="searchText='compression'"><a href="#/">Compression Straps</a></li>
+
+                            <li ng-click="searchText='daypack'"><a href="#/">Detachable Daypack</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" ng-model="searchText.name" placeholder="Search by name">
+                    </div>
+                </form>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <body>
+        <div class="margin-main-page" ng-view></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+        <script src="factories/product.factory.js"></script>
+        <script src="controllers/main_controller.js"></script>
+        <script src="controllers/checkout_controller.js"></script>
+    </body>
 </div>
+
 </html>

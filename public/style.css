@@ -1,73 +1,106 @@
-.nav-colors{
-  color: black;
-}
-.nav-style{
-  background-color: black;
-  font-family: 'Noto Serif', serif;
-  border: 2px solid black;
-
-}
-.button-margin{
-  margin-bottom: 1%;
-}
-.cell-size-left{
-  width: 5%;
-}
-.image-size{
-  height: 25%;
-  width:100%;
-}
-.navbar-brand{
-  color: white;
-  font-family: 'Noto Serif', serif;
-}
-.image-size-2{
-  height: 25%;
-  width:20vw;
-}
-.cell-size-right{
-  width: 20%;
+.nav-colors {
+    color: black;
 }
 
-.product-margin{
-  margin-left: 5%;
+.nav-style {
+    background-color: black;
+    font-family: 'Noto Serif', serif;
+    border: 2px solid black;
 }
 
-.button-color{
-  background-color: #F5B965;
-}
-.header-title{
-  color: black;
-  font-style: italic;
-  font-size: 3em;
-  font-family: 'Noto Serif', serif;
+.button-margin {
+    margin-bottom: 1%;
 }
 
-#background_Picture{
-  background: url(images/backpacker_3.jpg) no-repeat center center fixed;
-  background-size: cover;
-  padding-bottom: 10%;
-
-
-}
-.checkout-button{
-  background-color: #D75452;
-  color: black;
-}
-.col-background{
-  background-color: #fff;
+.cell-size-left {
+    width: 5%;
 }
 
-.checkout-col-width{
-  width: 20%;
+.image-size {
+    height: 25%;
+    width: 100%;
 }
 
-.checkout-col-width-product{
-  width: 40%;
-}
-.spacer{
-  height: 30vh;
-}
-h1 li {
+.navbar-brand {
+    color: white;
     font-family: 'Noto Serif', serif;
 }
+
+.image-size-2 {
+    height: 25%;
+    width: 20vw;
+}
+
+.cell-size-right {
+    width: 20%;
+}
+
+.product-margin {
+    margin-left: 5%;
+}
+
+.button-color {
+    background-color: #F5B965;
+}
+
+.header-title {
+    color: black;
+    font-style: italic;
+    font-size: 3em;
+    font-family: 'Noto Serif', serif;
+}
+
+#background_Picture {
+    background: url(images/backpacker_3.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding-bottom: 10%;
+}
+
+.checkout-button {
+    background-color: #D75452;
+    color: black;
+}
+
+.col-background {
+    background-color: #fff;
+}
+
+.checkout-col-width {
+    width: 20%;
+}
+
+.checkout-col-width-product {
+    width: 40%;
+}
+
+.spacer {
+    height: 30vh;
+}
+
+h1, h2, li {
+    font-family: 'Noto Serif', serif;
+}
+
+
+/*ABOUT PAGE */
+
+.about_title {
+  color: black;
+  font-size: 4em;
+}
+.about_backpacker{
+  color: black;
+}
+.block{
+  background-color: white;
+  opacity: .9;
+  border-radius: 15px 15px 15px 15px;
+  padding: 1%;
+  margin-top: 2%;
+}
+.about_backpacker_title{
+  color: white;
+}
+
+
+/*end*/
