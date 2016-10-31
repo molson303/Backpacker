@@ -46,7 +46,8 @@
 #background_Picture{
   background: url(images/backpacker_3.jpg) no-repeat center center fixed;
   background-size: cover;
-  height: cover;
+  padding-bottom: 10%;
+
 
 }
 .checkout-button{
